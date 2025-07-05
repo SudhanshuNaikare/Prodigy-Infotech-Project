@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/navigation.css">
+    <link rel="stylesheet" href="src/styles/stopwatch.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">Web Projects</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stopwatch.html" class="active">Stopwatch</a></li>
+                <li><a href="tictactoe.html">Tic Tac Toe</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="stopwatch-container">
+                <h2>Stopwatch</h2>
+                <div class="time-display">00:00:00</div>
+                <div class="controls">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="reset">Reset</button>
+                    <button id="lap">Lap</button>
+                </div>
+                <div class="lap-times"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/stopwatch.js"></script>
+</body>
+</html>

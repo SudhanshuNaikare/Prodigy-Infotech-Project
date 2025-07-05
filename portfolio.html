@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/navigation.css">
+    <link rel="stylesheet" href="src/styles/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">Web Projects</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stopwatch.html">Stopwatch</a></li>
+                <li><a href="tictactoe.html">Tic Tac Toe</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="portfolio-container">
+                <div class="about-me">
+                    <img src="public/images/profile-placeholder.jpg" alt="Profile Picture" class="profile-pic">
+                    <h2>About Me</h2>
+                    <p>Web developer passionate about creating interactive and user-friendly applications.</p>
+                </div>
+
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill">HTML5</div>
+                        <div class="skill">CSS3</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">React</div>
+                        <div class="skill">Node.js</div>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <h3>Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image stopwatch-bg">
+                                <i class="fas fa-stopwatch project-icon"></i>
+                            </div>
+                            <div class="project-info">
+                                <h4 class="project-title">Stopwatch App</h4>
+                                <p class="project-description">A precise stopwatch application with lap timing functionality and a clean interface.</p>
+                                <div class="project-links">
+                                    <a href="stopwatch.html">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image tictactoe-bg">
+                                <i class="fas fa-gamepad project-icon"></i>
+                            </div>
+                            <div class="project-info">
+                                <h4 class="project-title">Tic Tac Toe</h4>
+                                <p class="project-description">Classic two-player game with smart win detection and interactive gameplay.</p>
+                                <div class="project-links">
+                                    <a href="tictactoe.html">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image weather-bg">
+                                <i class="fas fa-cloud-sun project-icon"></i>
+                            </div>
+                            <div class="project-info">
+                                <h4 class="project-title">Weather App</h4>
+                                <p class="project-description">Get real-time weather information for any location with beautiful visualizations.</p>
+                                <div class="project-links">
+                                    <a href="weather.html">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/portfolio.js"></script>
+</body>
+</html> 

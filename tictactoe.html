@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/navigation.css">
+    <link rel="stylesheet" href="src/styles/tictactoe.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">Web Projects</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stopwatch.html">Stopwatch</a></li>
+                <li><a href="tictactoe.html" class="active">Tic Tac Toe</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="game-container">
+                <h2>Tic Tac Toe</h2>
+                <div class="game-status"></div>
+                <div class="game-board">
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                </div>
+                <button id="restart">Restart Game</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/tictactoe.js"></script>
+</body>
+</html> 

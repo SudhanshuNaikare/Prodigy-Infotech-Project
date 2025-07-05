@@ -1,0 +1,190 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #8B5CF6;
+    --secondary-color: #EC4899;
+    --accent-color: #10B981;
+    --dark-bg: #111827;
+    --darker-bg: #0F172A;
+    --card-bg: #1F2937;
+    --text-primary: #F3F4F6;
+    --text-secondary: #D1D5DB;
+    --hover-bg: #374151;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darker-bg);
+}
+
+/* Content Section Colors */
+#stopwatch-section {
+    background: linear-gradient(to bottom right, #111827, #374151);
+    border-top: 4px solid var(--primary-color);
+}
+
+#tictactoe-section {
+    background: linear-gradient(to bottom right, #111827, #312E81);
+    border-top: 4px solid var(--secondary-color);
+}
+
+#weather-section {
+    background: linear-gradient(to bottom right, #111827, #065F46);
+    border-top: 4px solid var(--accent-color);
+}
+
+#portfolio-section {
+    background: linear-gradient(to bottom right, #111827, #4C1D95);
+    border-top: 4px solid #8B5CF6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+/* Common Card Styles */
+.project-card, .dashboard-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover, .dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: var(--hover-bg);
+}
+
+.project-info, .dashboard-card {
+    padding: 1.5rem;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Button and Link Styles */
+button, .project-links a, .dashboard-card a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #2980b9;;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover, .project-links a:hover, .dashboard-card a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+/* Container styles */
+.container, .projects-grid, .dashboard-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.projects-grid, .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Skill Tags */
+.skill-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+}
+
+.skill-html {
+    background: #E34F26;
+}
+
+.skill-css {
+    background: #1572B6;
+}
+
+.skill-js {
+    background: #F7DF1E;
+    color: #000;
+}
+
+.skill-react {
+    background: #61DAFB;
+    color: #000;
+}
+
+.skill-node {
+    background: #339933;
+}
+
+.skill-python {
+    background: linear-gradient(45deg, #306998, #FFD43B);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 15px 15px;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+
+    button, .project-links a, .dashboard-card a {
+        padding: 0.6rem 1.2rem;
+    }
+
+    .container, .projects-grid, .dashboard-grid {
+        padding: 1rem;
+    }
+
+    .projects-grid, .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+} 

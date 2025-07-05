@@ -1,0 +1,106 @@
+.stopwatch-container {
+    background-color: #1F2937;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.time-display {
+    font-size: 3.5rem;
+    font-family: monospace;
+    margin: 2rem 0;
+    color: #475b70;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.controls button {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: transform 0.2s ease;
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+#start {
+    background-color: #2ecc71;
+}
+
+#start:hover {
+    background-color: #27ae60;
+}
+
+#pause {
+    background-color: #e74c3c;
+}
+
+#pause:hover {
+    background-color: #c0392b;
+}
+
+#reset {
+    background-color: #95a5a6;
+}
+
+#reset:hover {
+    background-color: #7f8c8d;
+}
+
+#lap {
+    background-color: #9b59b6;
+}
+
+#lap:hover {
+    background-color: #8e44ad;
+}
+
+.lap-times {
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.lap-time {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+}
+
+.lap-time:last-child {
+    border-bottom: none;
+}
+
+/* Scrollbar styling */
+.lap-times::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lap-times::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.lap-times::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.lap-times::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} 
