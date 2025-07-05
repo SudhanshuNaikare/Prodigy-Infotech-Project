@@ -83,7 +83,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.weather-details > div {
+.weather-details>div {
     text-align: center;
 }
 
@@ -113,8 +113,13 @@
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Error message */
@@ -127,9 +132,10 @@
 
 /* Weather icon */
 .weather-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 1rem;
+    font-size: 4rem;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
 }
 
 /* Responsive design */
